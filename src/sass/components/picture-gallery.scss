@@ -1,0 +1,42 @@
+:root {
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 250ms;
+}
+
+.gallery {
+    margin-top: 30px;
+  display: grid;
+  max-width: 98%;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__item {
+    position: relative;
+  }
+
+  &__image {
+    height: 250px;
+    object-fit: cover;
+    transition: transform var(--animation-duration) var(--timing-function);
+    border-radius: 4px;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    height: 100%;
+
+    &:hover {
+      cursor: zoom-in;
+    }
+  }
+
+
+}

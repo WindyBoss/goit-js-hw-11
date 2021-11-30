@@ -1,0 +1,22 @@
+.load-more-btn {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #113B98;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 30px;
+    margin-bottom: 30px;
+
+  &.is-hidden {
+    display: none;
+  }
+
+  &>.spinner {
+    margin-right: 10px;
+    &.is-hidden {
+      display: none;
+    }
+  }
+}
